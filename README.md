@@ -1,6 +1,6 @@
 # How to install
 ```:bash
-$ pip install git+https://github.com/midry3125/ascan
+$ pip install https://github.com/midry3125/ascan/archive/refs/heads/main.zip
 ```
 
 # Usage
