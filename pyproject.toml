@@ -1,0 +1,17 @@
+[project]
+name = "ascan"
+version = "0.1.0"
+description = "Extract line from an analog picture."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "opencv-python>=4.11.0.86",
+    "pillow>=11.3.0",
+]
+
+[project.scripts]
+ascan = "ascan.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
