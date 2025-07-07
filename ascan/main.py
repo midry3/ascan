@@ -15,9 +15,9 @@ def extract_black_lines(input_path, output_path, canvas_size):
     )
     alpha = binary.copy()
     line_img = np.zeros((binary.shape[0], binary.shape[1], 4), dtype=np.uint8)
-    line_img[:, :, 0] = 0
-    line_img[:, :, 1] = 0
-    line_img[:, :, 2] = 0
+    line_img[:, :, 0] = 50
+    line_img[:, :, 1] = 155
+    line_img[:, :, 2] = 168
     line_img[:, :, 3] = alpha
     pil_img = Image.fromarray(line_img)
     canvas = Image.new("RGBA", canvas_size, (255, 255, 255, 0))
